@@ -1,0 +1,53 @@
+/* 选择器变量 */
+@mySelector: #wrap;
+@wrap: wrap;
+
+@{mySelector} {
+    color: #ccc;
+    width: 550%;
+}
+
+.@{wrap} {
+    color: red;
+    width: 50%;
+}
+
+#@{wrap} {
+    color: green;
+    width: 100%;
+}
+
+/* 属性变量 */
+@boderStyle: border-style;
+@solid: solid;
+
+#wrap {
+    @{boderStyle}: @solid;
+}
+
+/* url 变量 */
+
+@images: "../img";
+
+body {
+    background: url("@{images}/cat.png");
+}
+
+/* 声明变量 */
+@background: {
+    background: red;
+}
+
+#main {
+    @background();
+}
+
+@Rules: {
+    width: 200px;
+    height: 200px;
+    border: solid 1 px red;
+}
+
+#con {
+    @Rules();
+}

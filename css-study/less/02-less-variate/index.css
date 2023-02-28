@@ -1,0 +1,30 @@
+/* 选择器变量 */
+#wrap {
+  color: #ccc;
+  width: 550%;
+}
+.wrap {
+  color: red;
+  width: 50%;
+}
+#wrap {
+  color: green;
+  width: 100%;
+}
+/* 属性变量 */
+#wrap {
+  border-style: solid;
+}
+/* url 变量 */
+body {
+  background: url("../img/cat.png");
+}
+/* 声明变量 */
+#main {
+  background: red;
+}
+#con {
+  width: 200px;
+  height: 200px;
+  border: solid 1 px red;
+}
