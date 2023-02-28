@@ -51,3 +51,31 @@ body {
 #con {
     @Rules();
 }
+
+/* 变量运算 */
+@width: 300px;
+@color: 222;
+
+#warp {
+    width: @width - 20;
+    height: @width - 20*50;
+    margin:(@width - 20)*5;
+    color: @color * 2;
+    background-color: @color + #111;
+
+}
+
+/* 变量的作用域 */ /* 就近原则 */
+@var: @a;
+@a:100%;
+#wrap {
+    width: @var;
+    @a:9%;
+}
+
+/* 用变量去定义变量 */
+@fnord: "I am fnord";
+@var:"fnord";
+#wrap::after{
+    content: @@var;//将@var替换为其值 content:@fnord;
+}

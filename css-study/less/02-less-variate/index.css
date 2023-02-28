@@ -28,3 +28,20 @@ body {
   height: 200px;
   border: solid 1 px red;
 }
+/* 变量运算 */
+#warp {
+  width: 280px;
+  height: -700px;
+  margin: 1400px;
+  color: 444;
+  background-color: #efefef;
+}
+/* 变量的作用域 */
+/* 就近原则 */
+#wrap {
+  width: "fnord";
+}
+/* 用变量去定义变量 */
+#wrap::after {
+  content: "I am fnord";
+}
