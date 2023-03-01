@@ -1,0 +1,43 @@
+/* 条件表达式 -- 7.2 带条件的混合 */
+.mixin(@a) when(lightness(@a)>=50%) {
+    background: black;
+}
+
+.mixin(@a) when(lightness(@a) < 50) {
+    background: white;
+}
+
+.mixin(@a) {
+    color: @a;
+}
+
+.class1 {
+    .mixin(#ddd);
+}
+
+.class2 {
+    .mixin(#555);
+}
+
+/* 7.3 类型检测函数 */
+/* 
+iscolor
+isnumber
+isstring
+iskeyword
+isurl
+*/
+
+.mixin3(@a: #fff; @b: 0) when(isnumber(@b)) {
+    color: @a;
+    font-size: @b;
+}
+
+.mixin3(@a; @b: black) when(iscolor(@b)) {
+    font-size: @a;
+    color: @b;
+}
+
+.class3 {
+    .mixin3(@a:#ccc; @b: 18px);
+}

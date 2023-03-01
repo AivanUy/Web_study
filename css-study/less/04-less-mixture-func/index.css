@@ -1,0 +1,93 @@
+/* 学习目标 */
+/* 2 无参方法 */
+.card {
+  background: #F6F6F6;
+  -webkit-box-shadow: 0 1px 2px #979797;
+  box-shadow: 0 1px 2px #979797;
+}
+#wrap {
+  background: #F6F6F6;
+  -webkit-box-shadow: 0 1px 2px #979797;
+  box-shadow: 0 1px 2px #979797;
+}
+#wrap {
+  background: #F6F6F6;
+  -webkit-box-shadow: 0 1px 2px #979797;
+  box-shadow: 0 1px 2px #979797;
+}
+/* . 和 # 都可以作为方法前缀；方法后面写不写() 看个人习惯 */
+/* 3 默认参数方法 */
+#main {
+  border: solid 1px red;
+  box-shadow: 0px 5px 30px red;
+}
+#wrap {
+  border: solid 1px #000;
+  box-shadow: 0px 50px 30px #000;
+}
+#content {
+  border: solid 1px #000;
+  box-shadow: 10px 50px 30px #000;
+  border: solid 1px red;
+  margin: 50px;
+}
+/* 4 方法的匹配模式 */
+/* 与 面向对象中的多态很相似 */
+#main {
+  border-color: transparent transparent transparent #999;
+  border-style: solid;
+  border: 50px;
+}
+/* 5 方法的命名空间 */
+#wrap {
+  height: 100px;
+}
+#main {
+  width: 300px;
+}
+#con {
+  background: #723232;
+  width: 20px;
+}
+/* 6 方法的条件筛选 */
+#main {
+  border: solid #999 200px;
+  background: #333;
+  font-size: 20px;
+}
+/* 7 数量不定的参数 */
+#main {
+  box-shadow: 1px 4px 30px red;
+  text-shadow: 1px 4px 30px red;
+}
+/* 8 方法使用important！ */
+#main {
+  border: solid 1px #000 !important;
+  box-shadow: 10px 50px 30px #000 !important;
+  border: solid 1px red !important;
+  margin: 50px !important;
+}
+/* 8 循环方法 */
+.column-1 {
+  width: 25%;
+}
+.column-2 {
+  width: 50%;
+}
+.column-3 {
+  width: 75%;
+}
+.column-4 {
+  width: 100%;
+}
+/* 10 属性拼接方法 */
+.main {
+  box-shadow: inset 0 0 10px #555, 0 0 20px black;
+}
+.main {
+  transform: scale(2) rotate(15deg);
+}
+/* 11 实战技巧 */
+div {
+  padding: 33px;
+}

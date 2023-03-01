@@ -1,0 +1,30 @@
+/* 5.2 extend 关键字的使用 */
+.animation,
+#main,
+#wrap {
+  transition: all 0.3s ease-out;
+}
+.animation .hine {
+  transform: scale(0);
+}
+/* 5.3 all 全局搜索替换 */
+#main,
+#wrap {
+  width: 200px;
+}
+#mian:after {
+  content: "Less is good";
+}
+/* 5.4 减少代码的重复性 */
+#main2 {
+  width: 200px;
+}
+#main2:after {
+  content: "Less is good toooo";
+}
+#warp2 {
+  width: 200px;
+}
+#warp2:after {
+  content: "Less is good toooo";
+}

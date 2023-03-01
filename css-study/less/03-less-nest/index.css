@@ -1,0 +1,47 @@
+/* & 符号运用 和 嵌套 */
+.center {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.center #list {
+  width: 50px;
+  height: 50px;
+  background: green;
+}
+.center #list li {
+  width: 20px;
+  height: 20px;
+}
+.center #list a {
+  width: 30px;
+  height: 30px;
+}
+.center #list img {
+  width: 40px;
+  height: 40px;
+}
+.center #list::after {
+  content: "less is more!";
+}
+.center #list_content {
+  margin: 20px;
+}
+/* 媒体查询| */
+@media screen and (max-width: 768px) {
+  #main {
+    width: 100px;
+  }
+}
+@media tv {
+  #main {
+    width: 2000px;
+  }
+}
+/* 实战技巧 定义私有样式 */
+#main.show {
+  display: block;
+}
+.show {
+  display: none;
+}

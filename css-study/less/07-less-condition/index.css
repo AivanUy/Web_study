@@ -1,0 +1,21 @@
+/* 条件表达式 -- 7.2 带条件的混合 */
+.class1 {
+  background: black;
+  color: #ddd;
+}
+.class2 {
+  background: white;
+  color: #555;
+}
+/* 7.3 类型检测函数 */
+/* 
+iscolor
+isnumber
+isstring
+iskeyword
+isurl
+*/
+.class3 {
+  color: #ccc;
+  font-size: 18px;
+}

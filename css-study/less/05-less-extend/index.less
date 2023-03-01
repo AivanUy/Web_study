@@ -1,0 +1,47 @@
+/* 5.2 extend 关键字的使用 */
+//extend 是 Less 的一个伪类。它可以继承 所以匹配声明中的全部样式。
+.animation {
+    transition: all .3s ease-out;
+
+    .hine {
+        transform: scale(0);
+    }
+}
+
+#main {
+    &:extend(.animation);
+}
+
+#con {
+    &:extend(.animation .hide);
+}
+
+/* 5.3 all 全局搜索替换 */
+#main {
+    width: 200px;
+}
+
+#mian {
+    &:after {
+        content: "Less is good";
+    }
+}
+
+#wrap:extend(#main all) {}
+
+/* 5.4 减少代码的重复性 */
+
+.Method() {
+    width: 200px;
+
+    &:after {
+        content: "Less is good toooo";
+    }
+}
+
+#main2 {
+    .Method();
+}
+#warp2{
+    .Method()
+}
